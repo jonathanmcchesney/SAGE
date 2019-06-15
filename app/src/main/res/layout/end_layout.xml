@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ff000000"
+        android:id="@+id/base"
+        tools:context=".TransitionsActivity">
+
+        <ImageSwitcher
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/switcher"
+            android:background="@drawable/ss3"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:text="OBJ Loader Demo"
+            android:layout_height="100dp"
+            android:id="@+id/button2"
+            android:layout_marginEnd="13dp"
+            android:layout_alignTop="@+id/button1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:typeface="serif"
+            android:textStyle="normal|bold"
+            android:textSize="18sp"
+            android:textColor="@android:color/background_light"
+            android:backgroundTint="?android:attr/textColorTertiary"
+            android:layout_width="150dp"
+            android:onClick="changeScene"/>
+
+        <Button
+            android:text="Custom Cube Demo"
+            android:layout_height="100dp"
+            android:id="@+id/button1"
+            android:layout_marginBottom="13dp"
+            android:layout_width="150dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="11dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            android:typeface="serif"
+            android:backgroundTint="?android:attr/textColorTertiary"
+            android:textColor="@android:color/background_light"
+            android:onClick="changeScene"/>
+
+    </RelativeLayout>
+</LinearLayout>
